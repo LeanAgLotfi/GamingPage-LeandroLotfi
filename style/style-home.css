@@ -12,58 +12,58 @@ body{
 }
 
 .site-header {
-    /*Header y su contenido
+    /*Header y su contenido*/
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding-top: 0 ;
-    */
+    
 }
 
 .header-nav{
-    /*nav con flex
+    /*nav con flex*/
     display: flex;
     flex: 1;
     justify-content: center;
     flex-direction: row;
     padding: 1.7rem;
-    */
+    
 }
 
 .header-nav__list{
-   /*
+   /* */
     display: flex;
     flex: 1;
     flex-direction: row;
     justify-content: space-evenly
-    */
+   
 }
 
 .header-nav__list li{
-    /*texto de la lista
+    /*texto de la lista*/
     list-style: none;
     font-size: 1.5rem;
-    */
+    
 }
 
 .header-nav__list li a{
-    /*texto del menu
+    /*texto del menu */
 
     text-decoration: none;
     color: white;
-    */
+   
 }
 
 .site-header :hover{
-    /*hover header
+    /*hover header */
    color: grey;
    transition: color 1s;
-   */
+  
 }
 
 .text-center__title{
-    /*texto del div main
+    /*texto del div main*/
     display: flex;
     flex: 1;
     flex-direction: row;
@@ -71,41 +71,41 @@ body{
     color: white;
     padding: 1rem;
     font-size: 3.5rem;
-    */
+    
 }
 
 .main-logo{
-    /*
+    /**/
     display: flex;
     flex: 1;
     justify-content: center;
-    */
+    
 }
 
 .site-content__center{
-    /*contenedor del div
+    /*contenedor del div*/
     display: flex;
     align-content: center;
     align-items: center;
     justify-content: center;
-    */
+    
 }
 
 .site-content__center a{
-    /*texto del contenido del div
+    /*texto del contenido del div*/
     text-decoration: none;
-*/
+
 }
 
 .site-content__center :hover{
-    /*pequeña transicion main
+    /*pequeña transicion main*/
     color: grey;
     transition: 1.5s;
-    */
+    
 }
 
 footer{
-    /*
+
     background-color: white;
     padding: 0.2rem;
     
@@ -192,4 +192,3 @@ footer{
     }
     
 }
-
