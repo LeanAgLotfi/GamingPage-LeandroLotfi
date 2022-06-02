@@ -8,66 +8,28 @@ body{
     /*reset*/
     box-sizing: border-box;  
     background-color: black;
-    overflow: auto;
+    overflow: scroll;
 }
 
-.site-header {
-    /*Header y su contenido*/
-    display: flex;
-}
-
-.header-nav{
-    /*nav con flex*/
-    padding: 1.7rem;
-}
-
-.header-nav__list{
-   /* */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly
-   
-}
-
-.header-nav__list li{
-    /*texto de la lista*/
-    list-style: none;
-    font-size: 1.5rem;
-    
-}
-
-.header-nav__list li a{
-    /*texto del menu */
-
-    text-decoration: none;
+.color{
     color: white;
-   
 }
 
-.site-header :hover{
+.color-hover :hover{
     /*hover header */
-   color: grey;
+   color: darkred;
    transition: color 1s;
   
 }
 
-.text-center__title{
-    /*texto del div main*/
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    color: white;
-    padding: 1rem;
-    font-size: 3.5rem;
-    
-}
 
 .main-logo{
     /**/
     display: flex;
     flex: 1;
     justify-content: center;
-    
+    padding: 50px;
+    padding-bottom: 0;
 }
 
 .site-content__center a{
@@ -83,91 +45,43 @@ body{
     
 }
 
-footer{
-
-    background-color: white;
-    padding: 0.2rem;
-    
+a.nav-link {
+    color: white;
+    opacity: 50%;
 }
 
-.footer-ul__list{
-    display: grid;
+.navbar-expand-lg .navbar-collapse{
+        justify-content: center;
+}
+
+a.dropdown-item {
+    color: white;
+}
+
+li.nav-item {
+    padding: 5px 50px;
+}
+
+ion-icon{
+    color: darkred;
+    font-size: 20px;
+}
+.hover-main{
+    padding: 15px 25px 0px 20px;
+}
+
+.hover-main :hover{
+    color: red;
+}
+
+.icon{
     list-style: none;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 50px;
-    border: 5px solid black;
-    justify-items: center;
-    align-items: center;
-}
-
-.footer-ul__list a{
-    text-decoration: none;
-    color: black;
-}
-
-.footer-li-list-texto{
     display: flex;
-    flex-direction: column; 
-    grid-area: texto;
-}
-.footer-li-list-texto li{
-    padding: 2px;
-   
-}
-
-.item{
-    flex: 1;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (min-width:1000px){
-    
-.site-header{
     flex-direction: row;
+    justify-content: center;
+    padding-right: 70px;
+    padding-left: 70px;
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 
-}
-
-@media screen and (max-width:520px){
-    
-    .site-header{
-        flex-direction: column;
-    }
-    .header-nav__list{
-        flex-direction: column;
-        align-items: center;
-    }
-    .footer-ul__list{
-        display: flex;
-        flex-direction: column;
-    }
-    
-}
