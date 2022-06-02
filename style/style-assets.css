@@ -118,6 +118,10 @@ ul.ul-remeras {
   width: 400px;
 }
 
+a.dropdown-item {
+  color: white;
+}
+
   @media screen and (max-width:1024px) {
    nav ul {
      display: flex;
