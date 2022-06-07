@@ -6,69 +6,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-  
     <link rel="stylesheet" href="..//style/style-assets.css">
     <title>Document</title>
 </head>
 <body>
     <header class="header-menu">
-        <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid bg-dark">
-              <a class="navbar-brand  fs-1 text" href="#">DRIP</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../index.html">HOME</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./easport.html">ESPORTS</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./company.html">COMPANY</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="./miembros.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      MIEMBROS
-                    </a>
-                    <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
-                      <li><a class="dropdown-item" href="./MIEMBROS/romo.html">ROMO</a></li>
-                      <li><a class="dropdown-item" href="./MIEMBROS/loco.html">LOCO</a></li>
-                      <li><a class="dropdown-item" href="./MIEMBROS/juancp.html">JUANCP</a></li>
-                      <li><a class="dropdown-item" href="./MIEMBROS/macho.html">MACHO</a></li>
-                      <li><a class="dropdown-item" href="./MIEMBROS/fudo.html">FUDO</a></li>
-                </ul>
-                  <li class="nav-item">
-                    <a class="nav-link disabled">TIENDA</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid d-flex align-items-center justify-content-around">
+            <div class="row">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav color-hover color h2">
+                          <li class="nav-item col padding-titulo">
+                              <a class="nav-link" href="../index.html">DRIP</a>
+                          </li>
+                          <li class="nav-item col padding-titulo">
+                              <a class="nav-link" href="./company.html">COMPANY</a>
+                          </li>
+                          <li class="nav-item col padding-titulo">
+                              <a class="nav-link" href="./easport.html">ESPORTS</a>
+                          </li>
+                          <li class="nav-item col padding-titulo">
+                              <a class="nav-link" href="./tienda.html">TIENDA</a>
+                          </li>
+                          <li class="nav-item dropdown col padding-titulo">
+                              <a class="nav-link dropdown-toggle" href="./miembros.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              MIEMBROS
+                              </a>
+                              <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="./miembros.html">TODOS</a></li>
+                                <li><a class="dropdown-item" href="./MIEMBROS/romo.html">ROMO</a></li>
+                                <li><a class="dropdown-item" href="./MIEMBROS/loco.html">LOCO</a></li>
+                                <li><a class="dropdown-item" href="./MIEMBROS/juancp.html">JUANCP</a></li>
+                                <li><a class="dropdown-item" href="./MIEMBROS/macho.html">MACHO</a></li>
+                                <li><a class="dropdown-item" href="./MIEMBROS/fudo.html">FUDO</a></li>
+                              </ul>
+                        </ul>
+                    </div>
+                </div>
+          </div>
+      </nav>
     </header>
 
     <main>
-        <div class="bloque">
-            <div class="tienda">
-                <h2 class="fs-3 text">DRIP > TIENDA</h2>
-            </div class="productos">
-                <h3 class="fs-4 text">PRODUCTOS</h3>
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner p-3 mb-5 bg-dark rounded">
+                    <div class="carousel-item active">
+                      <a href="*"><img class="img-fluid d-block w-100" src="../images/tienda_remeras.png" alt=""></a>
+                    </div>
+                    <div class="carousel-item">
+                      <a href="*"><img class="img-fluid d-block w-100" src="../images/REMERA-PARTE-ADELANTE.png" alt=""></a>
+                    </div>
+                    <div class="carousel-item">
+                      <a href="*"><img class="img-fluid  d-block w-100" src="../images/remera_drip_atras.png" alt=""></a>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
         </div>
-        <nav class="nav-remeras">
-            <ul class="ul-remeras">
-                <li><a href="*"><img src="../images/tienda_remeras.png" alt=""></a></li>
-                <li><a href="*"><img src="../images/remera_drip_atras.png" alt=""></a></li>
-                <li><a href="*"><img src="../images/REMERA-PARTE-ADELANTE.png" alt=""></a></li>
-                <li><a href="*"><img src="../images/REMERA-ROMO-PARTE-DE-ATRAS.png" alt=""></a></li>
-                <li><a href="*"><img src="../images/REMERA-LOCO-PARTE-DE-ATRAS.png" alt=""></a></li>
-                <li><a href="*"><img src="../images/REMERA-BETO-PARTE-DE-ATRAS.png" alt=""></a></li>
-                <li><a href="*"><img src="../images/REMERA-FUDO-PARTE-DE-ATRAS.png" alt=""></a></li>
-                <li><a href="*"><img src="../images/REMERA-MACHO-PARTE-DE-ATRAS.png" alt=""></a></li>
-            </ul>
-        </nav>
-
+        <div class="container">
+          <div class="row">
+          <nav class="nav-remeras">
+              <ul class="ul-remeras">
+                <div class="col-md-6 col-sm-12">
+                  <li><a href="*"><img class="img-fluid" src="../images/tienda_remeras.png" alt=""></a></li>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                  <li><a href="*"><img class="img-fluid" src="../images/remera_drip_atras.png" alt=""></a></li>
+                </div>
+                <div class="col-md-12 col-sm-12 d-flex justify-content-center">
+                  <li><a href="*"><img class="img-fluid border-dark" src="../images/REMERA-PARTE-ADELANTE.png" alt=""></a></li>
+                </div>                 
+                <div class="col-md-6 col-sm-12">
+                  <li><a href="*"><img class="img-fluid border border-dark" src="../images/REMERA-ROMO-PARTE-DE-ATRAS.png" alt=""></a></li>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                  <li><a href="*"><img class="img-fluid border border-dark" src="../images/REMERA-LOCO-PARTE-DE-ATRAS.png" alt=""></a></li>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                  <li><a href="*"><img class="img-fluid border border-dark" src="../images/REMERA-BETO-PARTE-DE-ATRAS.png" alt=""></a></li>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                  <li><a href="*"><img class="img-fluid border border-dark" src="../images/REMERA-FUDO-PARTE-DE-ATRAS.png" alt=""></a></li>
+                </div>
+                <div class="col-md-12 col-sm-12 d-flex justify-content-center">
+                  <li><a href="*"><img class="img-fluid border border-dark" src="../images/REMERA-MACHO-PARTE-DE-ATRAS.png" alt=""></a></li>
+                </div>
+              </ul>
+          </nav>
+          </div>
+        </div>
     </main>
 
     <footer>

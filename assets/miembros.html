@@ -4,21 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../style/style-assets.css">
     <title>Document</title>
 </head>
-<body>
-    <header class="header-menu">
-        <nav class="nav-menu">
-            <ul class="lista-menu">
-                <li><a href="../index.html">HOME</a></li>
-                <li><a href="../assets/easport.html">ESPORTS</a></li>
-                <li><a href="../assets/tienda.html">TIENDA</a></li>
-                <li><a href="../assets/miembros.html">MIEMBROS</a></li>
-                <li><a href="../assets/company.html">DRIP</a></li>
-        </nav>
-        
-    </header>
+<header class="header-menu">
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid d-flex align-items-center justify-content-around">
+          <div class="row">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+              
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav color-hover color h2">
+                        <li class="nav-item col padding-titulo">
+                            <a class="nav-link" href="../index.html">DRIP</a>
+                        </li>
+                        <li class="nav-item col padding-titulo">
+                            <a class="nav-link" href="./company.html">COMPANY</a>
+                        </li>
+                        <li class="nav-item col padding-titulo">
+                            <a class="nav-link" href="./easport.html">ESPORTS</a>
+                        </li>
+                        <li class="nav-item col padding-titulo">
+                            <a class="nav-link" href="./tienda.html">TIENDA</a>
+                        </li>
+                        <li class="nav-item dropdown col padding-titulo">
+                            <a class="nav-link dropdown-toggle" href="./miembros.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            MIEMBROS
+                            </a>
+                            <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+                              <li><a class="dropdown-item" href="./miembros.html">TODOS</a></li>
+                              <li><a class="dropdown-item" href="./MIEMBROS/romo.html">ROMO</a></li>
+                              <li><a class="dropdown-item" href="./MIEMBROS/loco.html">LOCO</a></li>
+                              <li><a class="dropdown-item" href="./MIEMBROS/juancp.html">JUANCP</a></li>
+                              <li><a class="dropdown-item" href="./MIEMBROS/macho.html">MACHO</a></li>
+                              <li><a class="dropdown-item" href="./MIEMBROS/fudo.html">FUDO</a></li>
+                            </ul>
+                        </li>
+                      </ul>
+                  </div>
+              </div>
+        </div>
+    </nav>
+  </header>
 
     <main class="main-contenido"><div class="subtitulo">
         <h1>TEAMS  >  MIEMBROS</h1>
@@ -34,23 +65,45 @@
         </nav>
     </main>
 
-    <footer class="site-footer">
-        <nav class="footer-nav_bloque">
-        <nav class="footer-nav__list">
-            <ul class="footer-ul__list">
-                <li><a href="https://www.twitch.tv/"><img src="../images/icons8-ios-50.png" alt="twitch"></a></li>
-                <li><a href="https://www.youtube.com/"><img src="../images/icons8-youtube-50.png" alt="youtube"></a></li>
-                <li><a href="https://www.tiktok.com/"><img src="../images/icons8-tiktok-50.png" alt="tiktok"></a></li>
-            </ul>
-        </nav>
-        <nav class="footer-nav__list">
-            <ul class="footer-ul__list">
-                <li><a href="">CONTACTO</a></li>
-                <li><a href="">SEGURIDAD</a></li>
-                <li><a href="">PRIVACIDAD</a></li>
-            </ul>   
-        </nav>
-        </nav>
-    </footer>  
+    <footer>
+        <div class="container-fluid">
+            <div class="row p-3 bg-dark text-white">
+                  <div class="col-xs-12 col-md-6 col-lg-3">
+                      <p class="h3">-</p>
+                  </div>
+                  <div class="col-xs-12 col-md-6 col-lg-3">
+                      <p class="h5 mb-3">Sponsors</p>
+                      <div class="mb-2">
+                          <a class="text-white text-decoration-none" href="">(quilmes)</a>
+                      </div>
+                      <div class="mb-2">
+                          <a class="text-white text-decoration-none" href="">(Logitech)</a>
+                      </div>
+                      <div class="mb-2">
+                          <a class="text-white text-decoration-none" href="">(Nike)</a>
+                      </div>
+                      <div class="mb-2">
+                          <a class="text-white text-decoration-none" href="">(Amd)</a>
+                      </div>  
+                  </div>
+                      <div class="col-xs-12 col-md-6 col-lg-3">
+                          <p class="h5 mb-3">Links</p>
+                          <div class="mb-2">
+                              <a class="text-secondary text-decoration-none" href="">Terms & Conditions</a>
+                          </div>
+                          <div class="mb-2">
+                              <a class="text-secondary text-decoration-none" href="">Privacy Policy</a>
+                          </div>
+                      </div>
+                      <div class="col-xs-12">
+                           <p class="text white text-center">Copyright - All rights reserved © 2022</p>
+                      </div>
+              </div>
+          </div>
+      </footer>
+
+ <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
 </body>
 </html>
