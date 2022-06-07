@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
     /*reset*/
     margin: 0;
@@ -84,3 +85,189 @@ ion-icon{
     padding-bottom: 10px;
 }
 
+=======
+*{
+    margin: 0;
+    padding: 0; /*reset*/
+}
+
+body{
+    box-sizing: border-box;  /*reset*/
+    background-color: black;
+    overflow: auto;
+    
+
+}
+
+.site-header {
+    /*Header y su contenido*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0 ;
+    
+}
+
+.header-nav{
+    /*nav con flex*/
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    flex-direction: row;
+    padding: 1.7rem;
+    
+}
+
+.header-nav__list{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-evenly
+    
+}
+
+.header-nav__list li{
+    /*texto de la lista*/
+    list-style: none;
+    font-size: 1.5rem;
+    
+}
+
+.header-nav__list li a{
+    /*texto del menu*/
+    text-decoration: none;
+    color: white;
+}
+
+.site-header :hover{
+    /*hover header*/
+   color: grey;
+   transition: color 1s;
+}
+
+.text-center__title{
+    /*texto del div main*/
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+    padding: 1rem;
+    font-size: 3.5rem;
+}
+
+.main-logo{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.site-content__center{
+    /*contenedor del div*/
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.site-content__center a{
+    /*texto del contenido del div*/
+    text-decoration: none;
+}
+
+.site-content__center :hover{
+    /*pequeña transicion main*/
+    color: grey;
+    transition: 1.5s;
+}
+
+footer{
+    background-color: white;
+    padding: 0.2rem;
+    
+}
+
+.footer-ul__list{
+    display: grid;
+    list-style: none;
+    grid-template-columns: 100px auto 100px;
+    grid-template-rows: 20px 25px 20px;
+    grid-template-areas: "footer texto";
+    border: 5px solid black;
+    align-content: center;
+    justify-items: center;
+}
+
+.footer-ul__list a{
+    text-decoration: none;
+    color: black;
+}
+
+.footer-li-list-texto{
+    display: flex;
+    flex-direction: column; 
+    grid-area: texto;
+}
+.footer-li-list-texto li{
+    padding: 2px;
+   
+}
+
+.item{
+    flex: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:1000px){
+    
+.site-header{
+    flex-direction: row;
+}
+
+}
+
+@media screen and (max-width:520px){
+    
+    .site-header{
+        flex-direction: column;
+    }
+    .header-nav__list{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-ul__list{
+        justify-content: center;
+    }
+    
+}
+
+>>>>>>> 3eab71ff8f13a2c32858a6900bccc5f91e87a120
