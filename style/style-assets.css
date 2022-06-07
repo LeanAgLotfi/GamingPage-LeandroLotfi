@@ -1,72 +1,64 @@
 *{
+  /*RESET*/
     margin: 0;
     padding: 0;
 
 }
 
 body{
+  /*BODY DE PAGINAS*/
     box-sizing: border-box;
-    background-color: black;
-}
-.nav-menu{
-    padding: 0;
+    background-color: gray;
 }
 
-nav{
-    padding: 1rem;
+.padding-titulo{
+  /*TITULO COMPARTIDO (TODOS)*/
+  padding: 5px 50px
 }
 
-.lista-menu{
-    display: flex;
-    justify-content: space-between;
+a.dropdown-item {
+  /*NAVBAR LISTA DESPLEGABLE COLORES*/
+  color: white;
 }
 
-.lista-menu li a{
-    padding: 1em 6em;
-    font-size: 16px;
+.nav-contenido ul {
+  /*CONTENIDO DE MIMBROS Y ESPORT*/
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: #292626; 
+  display: flex;
+  justify-content:space-around;
 }
 
-  nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    background: #292626; 
-    display: flex;
-    justify-content:space-around;
-  }
-  
 .subtitulo{
-    color: white;
-    padding: 1rem 100px;
+  /*CONTENIDO DE MIEMBROS Y ESPORT*/
+  color: white;
+  padding: 1rem 100px;
 }
 
   nav li a {
+    /*SELECTOR MIEMBROS Y ESPORT*/
     color: white;
     display: block;
     text-decoration: none;
     padding: .5em 1em;
   }
 
-  nav li a:hover {
+  .nav-contenido li a:hover {
+    /*SELECTOR HOVER MIEMBROS Y ESPORT*/
     background: white;
     color: red;
   }
- 
-
-  .footer-nav_bloque {
-    padding: 0;
-  }
-
-.footer-nav_bloque nav{
-    padding: 0;
-}
 
 .bloque {
+  /*COMPANY STYLE*/
   padding: 0;
   background-color: grey;
 }
 
 .bloque-primero {
+  /*COMPANY STYLE*/
   display: flex;
   padding: 17px 18px;
   flex-direction: row;
@@ -74,6 +66,7 @@ nav{
 }
 
 .bloque-segundo {
+  /*COMPANY STYLE*/
   display: flex;
   flex-direction: row;
   COLOR: darkred;
@@ -81,6 +74,7 @@ nav{
   justify-content: center;
 }
 p.parrafo {
+  /*COMPANY STYLE*/
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -91,68 +85,45 @@ p.parrafo {
 }
 
 span.parrafo-negrita {
+  /*COMPANY STYLE*/
   font-style: italic;
   color: darkred;
 }
 
-img.logo-drip-posicion {
-  padding: 10px 560px;
-}
-
 .bloque-tercero {
+  /*COMPANY STYLE*/
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
 }
 ul.ul-remeras {
+  /*TIENDA REMERAS STYLE*/
   display: flex;
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
+  list-style: none;
+  text-decoration: none;
 }
 
-
-.ul-remeras li img {
-  width: 400px;
+.w-100{
+  /*REMERAS CARUCEL TAMAÑO*/
+height: 400px;
 }
 
-a.dropdown-item {
-  color: white;
+.ul-remeras li img { 
+  /*LIST STYLE NONE DE LAS REMERAS DE TIENDA*/
+  list-style: none;
 }
 
   @media screen and (max-width:1024px) {
-   nav ul {
-     display: flex;
-     flex-direction: column;
-    }
-    .lista-menu {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
+  
  nav ul{
     display: flex;
     flex-direction: column;
 }
-
-.bloque{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-ul.ul-remeras {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
   }
 
   @media screen and (max-width:425px) {
@@ -161,18 +132,6 @@ ul.ul-remeras {
       flex-direction: column;
      }
 
-     .bloque{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden;
-    }
-    ul.ul-remeras {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
    } 
 
  
