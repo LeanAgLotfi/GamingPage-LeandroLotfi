@@ -1,0 +1,62 @@
+.bloque {
+    /*COMPANY STYLE*/
+    padding: 0;
+    background: black;
+  }
+  
+  .bloque-primero {
+    /*COMPANY STYLE*/
+    display: flex;
+    padding: 17px 18px;
+    flex-direction: row;
+    justify-content: flex-start;
+    color: white;
+  }
+  
+  .bloque-segundo {
+    /*COMPANY STYLE*/
+    display: flex;
+    flex-direction: row;
+    color: darkred;
+    justify-content: center;
+  }
+  p.parrafo {
+    /*COMPANY STYLE*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    padding: 10px 10px;
+    font-size: 22px;
+    color: white;
+    border: 3px grey solid;
+  }
+  
+  span.parrafo-negrita {
+    /*COMPANY STYLE*/
+    font-style: italic;
+    color: darkred;
+  }
+  
+.Img__Company{
+    display: flex;
+    background-color: black;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+
+  .bloque-tercero {
+    /*COMPANY STYLE*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+  }
+
+.padding-titulo{
+    /*TITULO COMPARTIDO (TODOS)*/
+    padding: 5px 50px;
+
+  }
