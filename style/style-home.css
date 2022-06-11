@@ -7,8 +7,8 @@
 body{
     /*reset*/
     box-sizing: border-box;  
-    background-color: black;
     overflow: scroll;
+    background-position: center;
 }
 
 .color{
@@ -148,6 +148,25 @@ ion-icon{
     justify-content: center;
 }
 
+.logos__footer{
+    width: 100px;
+    height: auto;
+}
+.logos__flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.links__flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.img__centro{
+    display: flex;
+    justify-content: center;
+}
+
 .site-content__center{
     /*contenedor del div*/
     display: flex;
@@ -173,54 +192,15 @@ ion-icon{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (min-width:1000px){
-    
-.site-header{
-    flex-direction: row;
-}
-
-}
-
 @media screen and (max-width:520px){
     
-    .site-header{
-        flex-direction: column;
-    }
-    .header-nav__list{
-        flex-direction: column;
-        align-items: center;
-    }
-    .footer-ul__list{
-        justify-content: center;
-    }
-    
+.icon__flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
 }
 
 
