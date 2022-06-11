@@ -193,7 +193,13 @@ ion-icon{
     flex: 1;
 }
 
+.text__color{
+    color: darkred;
+}
 
+.text__color :hover{
+    color: red;
+}
 
 @media screen and (max-width:520px){
     
