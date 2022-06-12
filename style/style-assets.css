@@ -9,6 +9,8 @@ body{
   /*BODY DE PAGINAS*/
     box-sizing: border-box;
     background-color: gray;
+    background-image: url(../images/IMG-BG-DRIP-HEXAGON-\ conv.jpeg);
+    overflow: scroll;
 }
 
 .padding-titulo{
@@ -25,10 +27,10 @@ a.dropdown-item {
   /*CONTENIDO DE MIMBROS Y ESPORT*/
   list-style: none;
   padding: 0;
-  margin: 0;
-  background: #292626; 
+  margin: 0; 
   display: flex;
   justify-content:space-around;
+
 }
 
 .subtitulo{
@@ -43,11 +45,16 @@ a.dropdown-item {
     display: block;
     text-decoration: none;
     padding: .5em 1em;
+    text-align: center;
   }
+
+.nav-contenido{
+  padding-bottom: 1em;
+}
 
   .nav-contenido li a:hover {
     /*SELECTOR HOVER MIEMBROS Y ESPORT*/
-    background: white;
+    background: linear-gradient(to bottom, rgb(20, 19, 19), #807f7f);
     color: red;
   }
 
@@ -118,6 +125,31 @@ height: 400px;
   list-style: none;
 }
 
+.logos__footer{
+  width: auto;
+  height: auto;
+  max-width: 100px;
+  max-height: 200px;
+}
+.logos__flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.links__flex{
+  display: flex;
+  flex-direction: column;
+}
+
+.img__centro{
+  display: flex;
+  justify-content: center;
+}
+
+.top_end_bg{
+      background-image: linear-gradient(to bottom, rgb(20, 19, 19), #807f7f);
+}
+
   @media screen and (max-width:1024px) {
   
  nav ul{
@@ -125,11 +157,20 @@ height: 400px;
 }
   }
 
-  @media screen and (max-width:425px) {
-    nav ul {
+@media screen and (max-width:520px){
+    
+  .icon__flex{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+  .logos__flex{
+        flex-direction: column;
+    }
+
+  nav ul {
       flex-direction: column;
      }
-
-   } 
-
- 
+    }
+    

@@ -1,0 +1,153 @@
+
+.padding-titulo{
+    /*TITULO COMPARTIDO (TODOS)*/
+    padding: 5px 50px
+  }
+  
+  a.dropdown-item {
+    /*NAVBAR LISTA DESPLEGABLE COLORES*/
+    color: white;
+  }
+  
+  .nav-contenido ul {
+    /*CONTENIDO DE MIMBROS Y ESPORT*/
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #292626; 
+    display: flex;
+    justify-content:space-around;
+  }
+  
+  .subtitulo{
+    /*CONTENIDO DE MIEMBROS Y ESPORT*/
+    color: white;
+    padding: 1rem 100px;
+  }
+  
+    nav li a {
+      /*SELECTOR MIEMBROS Y ESPORT*/
+      color: white;
+      display: block;
+      text-decoration: none;
+      padding: .5em 1em;
+    }
+  
+    .nav-contenido li a:hover {
+      /*SELECTOR HOVER MIEMBROS Y ESPORT*/
+      background: white;
+      color: red;
+    }
+  
+  .bloque {
+    /*COMPANY STYLE*/
+    padding: 0;
+    background-color: grey;
+  }
+  
+  .bloque-primero {
+    /*COMPANY STYLE*/
+    display: flex;
+    padding: 17px 18px;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  
+  .bloque-segundo {
+    /*COMPANY STYLE*/
+    display: flex;
+    flex-direction: row;
+    COLOR: darkred;
+    BORDER: 5px black solid;
+    justify-content: center;
+  }
+  p.parrafo {
+    /*COMPANY STYLE*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    padding: 10px 10px;
+    font-size: 22px;
+    color: white;
+  }
+  
+  span.parrafo-negrita {
+    /*COMPANY STYLE*/
+    font-style: italic;
+    color: darkred;
+  }
+  
+  .bloque-tercero {
+    /*COMPANY STYLE*/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  ul.ul-remeras {
+    /*TIENDA REMERAS STYLE*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  .w-100{
+    /*REMERAS CARUCEL TAMAÑO*/
+  height: 400px;
+  }
+  
+  .ul-remeras li img { 
+    /*LIST STYLE NONE DE LAS REMERAS DE TIENDA*/
+    list-style: none;
+  }
+  
+  .logos__footer{
+    width: auto;
+    height: auto;
+    max-width: 100px;
+    max-height: 200px;
+  }
+  .logos__flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .links__flex{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .img__centro{
+    display: flex;
+    justify-content: center;
+  }
+  
+    @media screen and (max-width:1024px) {
+    
+   nav ul{
+      flex-direction: column;
+  }
+    }
+  
+  @media screen and (max-width:520px){
+      
+    .icon__flex{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+      }
+      
+    .logos__flex{
+          flex-direction: column;
+      }
+  
+    nav ul {
+        flex-direction: column;
+       }
+      }
+      
