@@ -1,3 +1,7 @@
+@charset "UTF-8";
+/*MAPAS DE COLORES*/
+/*FIN DE MAPA*/
+/*MAPA TAMAÑOS*/
 * {
   /*RESET*/
   margin: 0;
@@ -6,8 +10,45 @@
 body {
   /*BODY DE PAGINAS*/
   box-sizing: border-box;
-  background-color: gray;
+  background-color: grey;
   overflow: scroll; }
+
+.padding-titulo {
+  /*TITULO COMPARTIDO (TODOS)*/
+  padding: 5px 50px; }
+
+a.dropdown-item {
+  /*NAVBAR LISTA DESPLEGABLE COLORES*/
+  color: white; }
+
+.nav-contenido ul {
+  /*CONTENIDO DE MIMBROS Y ESPORT*/
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around; }
+
+.subtitulo {
+  /*CONTENIDO DE MIEMBROS Y ESPORT*/
+  color: white;
+  padding: 1rem 100px; }
+
+nav li a {
+  /*SELECTOR MIEMBROS Y ESPORT*/
+  color: white;
+  display: block;
+  text-decoration: none;
+  padding: .5em 1em;
+  text-align: center; }
+
+.nav-contenido {
+  padding-bottom: 1em; }
+
+.nav-contenido li a:hover {
+  /*SELECTOR HOVER MIEMBROS Y ESPORT*/
+  background: linear-gradient(to bottom, #141313, #807f7f);
+  color: red; }
 
 .bloque {
   /*COMPANY STYLE*/
@@ -59,6 +100,56 @@ span.parrafo-negrita {
   align-items: center;
   color: white; }
 
-.padding-titulo {
-  /*TITULO COMPARTIDO (TODOS)*/
-  padding: 5px 50px; }
+ul.ul-remeras {
+  /*TIENDA REMERAS STYLE*/
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  text-decoration: none; }
+
+.w-100 {
+  /*REMERAS CARUCEL TAMAÑO*/
+  height: 400px; }
+
+.ul-remeras li img {
+  /*LIST STYLE NONE DE LAS REMERAS DE TIENDA*/
+  list-style: none; }
+
+.logos__footer {
+  width: auto;
+  height: auto;
+  max-width: 100px;
+  max-height: 250px; }
+
+.logos__flex {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.links__flex {
+  display: flex;
+  flex-direction: column; }
+
+.img__centro {
+  display: flex;
+  justify-content: center; }
+
+.top_end_bg {
+  background-image: linear-gradient(to bottom, #141313, #807f7f); }
+
+@media screen and (max-width: 1024px) {
+  nav ul {
+    flex-direction: column; } }
+
+@media screen and (max-width: 520px) {
+  .icon__flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+  .logos__flex {
+    flex-direction: column; }
+  nav ul {
+    flex-direction: column; } }
