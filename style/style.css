@@ -11,6 +11,7 @@ body {
   /*BODY DE PAGINAS*/
   box-sizing: border-box;
   background-color: grey;
+  background-image: url(../images/IMG-BG-DRIP-HEXAGON-\ conv.jpeg);
   overflow: scroll; }
 
 .padding-titulo {
