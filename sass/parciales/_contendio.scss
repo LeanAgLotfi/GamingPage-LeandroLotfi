@@ -111,6 +111,23 @@ ul.ul-remeras {
   text-decoration: none;
 }
 
+.botones__ropa {
+  height: 300px;
+  width: 400px;
+  max-width: 400px;
+  max-height: 500px;
+  border-radius: 10px;
+  box-shadow: 2px black;
+}
+
+.botones__flex{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+
+
 .w-100{
   /*REMERAS CARUCEL TAMAÑO*/
 height: map-get($alturas, grande);

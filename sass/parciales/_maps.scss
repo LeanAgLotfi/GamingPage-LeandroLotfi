@@ -26,8 +26,10 @@ grande:400px,
 mediano:250px,
 chico:100px,
 
+
 );
 
 $grande:map-get($alturas, grande);
 $mediano:map-get($alturas, mediano);
 $chico:map-get($alturas, chico);
+
