@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-<link rel="stylesheet" href="../style/style.css">
+ <!-- CSS only -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Joan&family=Stick+No+Bills:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+ <!-- boostrap -->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+ <link rel="stylesheet" href="../style/style-assets.css">
+ <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <meta name="keywords" content="DRIP, GAMING, HOME, ESPORTS, esport, TIENDA">
 <meta name="description" content="Unete a tu equipo esport favorito. Con DRIP-GAMING la victoria esta asegurada.">
 <title>DRIP GAMING - ESPORT</title>
@@ -14,14 +19,14 @@
 <body>
     <header class="header-menu">
         <nav class="navbar navbar-expand-lg top_end_bg">
-          <div class="container-fluid d-flex align-items-center justify-content-around">
+          <div class="container-fluid nav__flex">
               <div class="row">
                       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                           <span class="navbar-toggler-icon"></span>
                       </button>
                   
                       <div class="collapse navbar-collapse" id="navbarNav">
-                          <ul class="navbar-nav color-hover color h2">
+                          <ul class="navbar-nav color__nav__pag h2">
                             <li class="nav-item col padding-titulo">
                                 <a class="nav-link" href="../index.html">DRIP</a>
                             </li>
@@ -53,15 +58,16 @@
             </div>
         </nav>
       </header>
-    <main class="main-contenido"><div class="subtitulo">
-            <h1>ESPORT  >  JUEGOS</h1>
+    <main class="main-contenido">
+        <div class="subtitulo">
+            <label>ESPORT  >  JUEGOS</label>
         </div>
         <nav class="nav-contenido">
             <ul class="lista-contenido">
-                <li><a href="../assets/miembros.html"><img width="200px" height="400px" src="../images/ark-ESPORT-480X800.jpg" alt=""><img width="150px" height="150px" src="../images/ark.png" alt=""></a></li>
-                <li><a href="../assets/miembros.html"><img width="200px" height="400px" src="../images/IMG-LEAGUEOFLEGUEND-EASPORT.JPG" alt=""><img width="150px" height="150px" src="../images/LOL.png" alt=""></a></li>
-                <li><a href="../assets/miembros.html"><img width="200px" height="400px" src="../images/VALORANT-200X400.png" alt=""><img width="150px" height="150px" src="../images/Games-Valorant-1024x1024.png" alt=""></a></li>
-                <li><a href="../assets/miembros.html"><img src="../images/Imagen 200x400_FIFA_ESPORT.jpg" alt=""><img width="150px" height="150px" src="../images/fifa.png" alt=""></a></li>
+                <li><a href="../assets/miembros.html"><img src="../images/ESPORT/ARK  PLANTILLA.jpg" alt=""><img class="img__logo__juego" src="../images/ESPORT/ARK-LOGO.png" alt=""></a></li>
+                <li><a href="../assets/miembros.html"><img src="../images/ESPORT/LOL-PLANTILLA.JPG" alt=""><img class="img__logo__juego" src="../images/ESPORT/LOL.png" alt=""></a></li>
+                <li><a href="../assets/miembros.html"><img src="../images/ESPORT/VALORANT-PLANTILLA.png" alt=""><img  class="img__logo__juego" src="../images/ESPORT/VALORANT LOGO.png" alt=""></a></li>
+                <li><a href="../assets/miembros.html"><img src="../images/ESPORT/FIFA-PLANTILLA.jpg" alt=""><img class="img__logo__juego" src="../images/ESPORT/FIFA-LOGO.png" alt=""></a></li>
             </ul>
         </nav>
     </main>
@@ -69,21 +75,18 @@
     <footer>
         <div class="container-fluid top_end_bg">
             <div class="row p-3 text-white">
-                  <div class="col-xs-12 col-md-6 col-lg-3">
-                      <p class="h3"></p>
-                  </div>
                   <div class="col-12 logos__flex">
                       <div class="col-3 img__centro">
-                          <a class="text-white text-decoration-none" href=""> <img class="img-fluid logos__footer" src="../images/Quilmes_Logo_Nuevo conv.png" alt=""></a>
+                          <a class="text-white text-decoration-none" href=""> <img class="img-fluid logos__footer" src="../images/SPONSORS/Quilmes_Logo_Nuevo conv.png" alt=""></a>
                       </div>
                       <div class="col-3 img__centro">
-                          <a class="text-white text-decoration-none" href=""><img class="img-fluid logos__footer" src="../images/logitech-logopng conv.png" alt=""></a>
+                          <a class="text-white text-decoration-none" href=""><img class="img-fluid logos__footer" src="../images/SPONSORS/logitech-logopng conv.png alt"></a>
                       </div>
                       <div class="col-3 img__centro">
-                          <a class="text-white text-decoration-none" href=""><img class="img-fluid logos__footer" src="../images/pngwing.com conv.png" alt=""></a>
+                          <a class="text-white text-decoration-none" href=""><img class="img-fluid logos__footer" src="../images/SPONSORS/pngwing.com conv.png" alt=""></a>
                       </div>
                       <div class="col-3 img__centro">
-                          <a class="text-white text-decoration-none" href=""><img  class="img-fluid logos__footer" src="../images/AMD_Radeon_logo conv.png" alt=""></a>
+                          <a class="text-white text-decoration-none" href=""><img  class="img-fluid logos__footer" src="../images/SPONSORS/AMD_Radeon_logo conv.png" alt=""></a>
                       </div>  
                   </div>
                       <div class="col-12 links__flex">

@@ -12,11 +12,11 @@ body{
     background-size: cover;
 }
 
-.color{
+.color__nav{
     color: white;
 }
 
-.color-hover :hover{
+.color__nav :hover{
     /*hover header */
    color: darkred;
    transition: color 1s;

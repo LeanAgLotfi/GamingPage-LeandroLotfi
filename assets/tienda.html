@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="../style/style.css">
+  <!-- CSS only -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Joan&family=Stick+No+Bills:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- boostrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="../style/style-assets.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <meta name="keywords" content="DRIP, GAMING, HOME, ESPORTS, esport, TIENDA">
     <meta name="description" content="Unete a tu equipo esport favorito. Con DRIP-GAMING la victoria esta asegurada.">
     <title>DRIP GAMING - TIENDA</title>
@@ -14,15 +19,15 @@
 <body>
     <header class="header-menu">
       <nav class="navbar navbar-expand-lg top_end_bg">
-        <div class="container-fluid d-flex align-items-center justify-content-around">
+        <div class="container-fluid nav__flex">
             <div class="row">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                 
                     <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav color-hover color h2">
-                          <li class="nav-item col padding-titulo">
+                        <ul class="navbar-nav color__nav__pag h2">
+                          <li class="nav-item col padding-titulo" id="DRIP">
                               <a class="nav-link" href="../index.html">DRIP</a>
                           </li>
                           <li class="nav-item col padding-titulo">
@@ -54,37 +59,42 @@
     </header>
 
   <main>
-      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner p-3 mb-5 bg-dark rounded">
-          <div class="carousel-item active">
-              <a href="*"><img class="img-fluid d-block w-100" src="../images/tienda_remeras.png" alt=""></a>
-          </div>
-            <div class="carousel-item">
-              <a href="*"><img class="img-fluid d-block w-100" src="../images/REMERA-PARTE-ADELANTE.png" alt=""></a>
-            </div>
-          <div class="carousel-item">
-            <a href="*"><img class="img-fluid  d-block w-100" src="../images/remera_drip_atras.png" alt=""></a>
-          </div>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../images/DRIP-BANNER-TIENDA.png" class="d-block w-100" alt="...">
         </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-          </button>
+        <div class="carousel-item">
+          <img src="../images/TIENDA/tienda_remeras (1).png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="../images/TIENDA/REMERA-PARTE-ADELANTE.png" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
 <div class="conteiner">
     <div class="row p-4">
         <div class="col botones__flex">
-            <img class="botones__ropa alturas__botoner__ropa" src="../images/ropa-negra.jpg" alt="conjuntos-ropa">
+            <img class="botones__ropa alturas__botoner__ropa" src="../images/TIENDA/ropa-negra.jpg" alt="conjuntos-ropa">
         </div>
         <div class="col botones__flex">
-            <img class="botones__ropa alturas__botoner__ropa" src="../images/remera-negra.jpg" alt="remeras">
+            <img class="botones__ropa alturas__botoner__ropa" src="../images/TIENDA/remera-negra.jpg" alt="remeras">
         </div>
         <div class="col botones__flex">
-            <img class="botones__ropa alturas__botoner__ropa" src="../images/auriculares-logitech.jpeg" alt="accesorios">
+            <img class="botones__ropa alturas__botoner__ropa" src="../images//TIENDA/auriculares-logitech.jpeg" alt="accesorios">
         </div>
     </div>
 </div>
@@ -94,29 +104,29 @@
       <nav class="nav-remeras">
           <ul class="ul-remeras">
             <div class="row">
-              <div class="">
-                <li><a href="*"><img class="" src="../images/tienda_remeras.png" alt=""></a></li>
+              <div class="col-12">
+                <li><a href="*"><img class="img-fluid" src="../images/TIENDA/tienda_remeras.png" alt=""></a></li>
               </div>
-              <div class="">
-                <li><a href="*"><img class="" src="../images/remera_drip_atras.png" alt=""></a></li>
+              <div class="col-4">
+                <li><a href="*"><img class="img-fluid" src="../images/TIENDA/remera_drip_atras.png" alt=""></a></li>
               </div>
-              <div class="">
-                <li><a href="*"><img class="" src="../images/REMERA-PARTE-ADELANTE.png" alt=""></a></li>
+              <div class="col-8">
+                <li><a href="*"><img class="img-fluid" src="../images/TIENDA/REMERA-PARTE-ADELANTE.png" alt=""></a></li>
               </div> 
-              <div class="">
-              <li><a href="*"><img class="" src="../images/REMERA-ROMO-PARTE-DE-ATRAS.png" alt=""></a></li>
+              <div class="col-4">
+              <li><a href="*"><img class="img-fluid" src="../images/TIENDA/REMERA-ROMO-PARTE-DE-ATRAS.png" alt=""></a></li>
             </div>               
-            <div class="">
-              <li><a href="*"><img class="" src="../images/REMERA-LOCO-PARTE-DE-ATRAS.png" alt=""></a></li>
+            <div class="col-8">
+              <li><a href="*"><img class="img-fluid" src="../images/TIENDA/REMERA-LOCO-PARTE-DE-ATRAS.png" alt=""></a></li>
             </div>
-            <div class="">
-              <li><a href="*"><img class="" src="../images/REMERA-BETO-PARTE-DE-ATRAS.png" alt=""></a></li>
+            <div class="col-12">
+              <li><a href="*"><img class="img-fluid" src="../images/TIENDA/REMERA-BETO-PARTE-DE-ATRAS.png" alt=""></a></li>
             </div>
-            <div class="">
-              <li><a href="*"><img class="" src="../images/REMERA-FUDO-PARTE-DE-ATRAS.png" alt=""></a></li>
+            <div class="col-8">
+              <li><a href="*"><img class="img-fluid" src="../images/TIENDA/REMERA-FUDO-PARTE-DE-ATRAS.png" alt=""></a></li>
             </div>
-            <div class="">
-              <li><a href="*"><img class="" src="../images/REMERA-MACHO-PARTE-DE-ATRAS.png" alt=""></a></li>
+            <div class="col-4">
+              <li><a href="*"><img class="img-fluid" src="../images/TIENDA/REMERA-MACHO-PARTE-DE-ATRAS.png" alt=""></a></li>
             </div>
           </ul>
       </nav>
@@ -129,16 +139,16 @@
           <div class="row p-3 text-white">
                 <div class="col-12 logos__flex">
                     <div class="col-3 img__centro">
-                        <a class="text-white text-decoration-none" href=""> <img class="img-fluid logos__footer" src="../images/Quilmes_Logo_Nuevo conv.png" alt=""></a>
+                        <a class="text-white text-decoration-none" href=""> <img class="img-fluid logos__footer" src="../images/SPONSORS/Quilmes_Logo_Nuevo conv.png" alt=""></a>
                     </div>
                     <div class="col-3 img__centro">
-                        <a class="text-white text-decoration-none" href=""><img class="img-fluid logos__footer" src="../images/logitech-logopng conv.png" alt=""></a>
+                        <a class="text-white text-decoration-none" href=""><img class="img-fluid logos__footer" src="../images/SPONSORS/logitech-logopng conv.png alt"></a>
                     </div>
                     <div class="col-3 img__centro">
-                        <a class="text-white text-decoration-none" href=""><img class="img-fluid logos__footer" src="../images/pngwing.com conv.png" alt=""></a>
+                        <a class="text-white text-decoration-none" href=""><img class="img-fluid logos__footer" src="../images/SPONSORS/pngwing.com conv.png" alt=""></a>
                     </div>
                     <div class="col-3 img__centro">
-                        <a class="text-white text-decoration-none" href=""><img  class="img-fluid logos__footer" src="../images/AMD_Radeon_logo conv.png" alt=""></a>
+                        <a class="text-white text-decoration-none" href=""><img  class="img-fluid logos__footer" src="../images/SPONSORS/AMD_Radeon_logo conv.png" alt=""></a>
                     </div>  
                 </div>
                     <div class="col-12 links__flex">
