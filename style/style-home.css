@@ -1,0 +1,218 @@
+*{
+    /*reset*/
+    margin: 0;
+    padding: 0; 
+}
+
+body{
+    /*reset*/
+    box-sizing: border-box;  
+    overflow: scroll;
+    background-position: center;
+    background-size: cover;
+}
+
+.color__nav{
+    color: white;
+}
+
+.color__nav :hover{
+    /*hover header */
+   color: darkred;
+   transition: color 1s;
+  
+}
+
+.main-logo{
+    /**/
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    padding: 50px;
+    padding-bottom: 0;
+}
+
+.site-content__center a{
+    /*texto del contenido del div*/
+    text-decoration: none;
+
+}
+
+.site-content__center :hover{
+    /*pequeña transicion main*/
+    color: grey;
+    transition: 1.5s;
+    
+}
+
+a.nav-link {
+    color: white;
+    opacity: 50%;
+}
+
+.navbar-expand-lg .navbar-collapse{
+        justify-content: center;
+}
+
+a.dropdown-item {
+    color: white;
+}
+
+li.nav-item {
+    padding: 5px 50px;
+}
+
+ion-icon{
+    color: darkred;
+    font-size: 20px;
+}
+.hover-main{
+    padding: 15px 25px 0px 20px;
+}
+
+.hover-main :hover{
+    color: red;
+}
+
+.icon{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-right: 70px;
+    padding-left: 70px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.site-header {
+    /*Header y su contenido*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0 ;
+    
+}
+
+.header-nav{
+    /*nav con flex*/
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    flex-direction: row;
+    padding: 1.7rem;
+    
+}
+
+.header-nav__list{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-evenly
+    
+}
+
+.header-nav__list li{
+    /*texto de la lista*/
+    list-style: none;
+    font-size: 1.5rem;
+    
+}
+
+.header-nav__list li a{
+    /*texto del menu*/
+    text-decoration: none;
+    color: white;
+}
+
+.site-header :hover{
+    /*hover header*/
+   color: grey;
+   transition: color 1s;
+}
+
+.text-center__title{
+    /*texto del div main*/
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+    padding: 1rem;
+    font-size: 3.5rem;
+}
+
+.main-logo{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.logos__footer{
+    width: auto;
+    height: auto;
+    max-width: 100px;
+    max-height: 200px;
+}
+.logos__flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.links__flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.img__centro{
+    display: flex;
+    justify-content: center;
+}
+
+.site-content__center{
+    /*contenedor del div*/
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.site-content__center a{
+    /*texto del contenido del div*/
+    text-decoration: none;
+}
+
+.site-content__center :hover{
+    /*pequeña transicion main*/
+    color: grey;
+    transition: 1.5s;
+}
+
+.item{
+    flex: 1;
+}
+
+.text__color{
+    color: darkred;
+}
+
+.text__color :hover{
+    color: red;
+}
+
+@media screen and (max-width:520px){
+    
+.icon__flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.logos__flex{
+    flex-direction: column;
+}
+
+}
+
+

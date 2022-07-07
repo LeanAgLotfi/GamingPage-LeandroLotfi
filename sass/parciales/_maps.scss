@@ -1,0 +1,35 @@
+/*MAPAS DE COLORES*/ 
+
+$colors: (
+
+top-end:linear-gradient(to bottom, #141313, #807f7f),
+rojonegro: #8b0000,
+blanco: #ffffff,
+rojo: #ff0000,
+gris:#747272,
+negro: #0f0f0f
+);
+
+
+
+/*FIN DE MAPA*/
+
+
+$background:map-get($colors, gris);
+
+/*MAPA TAMAÑOS*/
+
+
+$alturas:(
+
+grande:400px,
+mediano:250px,
+chico:100px,
+
+
+);
+
+$grande:map-get($alturas, grande);
+$mediano:map-get($alturas, mediano);
+$chico:map-get($alturas, chico);
+
