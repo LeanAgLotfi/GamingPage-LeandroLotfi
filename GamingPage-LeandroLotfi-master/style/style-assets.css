@@ -18,68 +18,81 @@ body{
 }
 
   #body__bg{
+    /*body de index*/
     background: url(../images/BACKGROUND/wallpaperbetter.com_1680x1050.jpg);
     box-sizing: border-box;  
     overflow: scroll;
     background-position: center;
-    background-size: 100% 100%;
-    background-attachment: fixed;
+    background-size: cover;
     filter: drop-shadow(12px 3px 3px black);
     font-family: 'Joan', serif;
     font-family: 'Stick No Bills', sans-serif;
   }
+   /*----------------------------------------------------------------------------*/ 
+.header-menu
+  /*HEADER STYLE*/
+  { margin-bottom: 10px;}
     
-  .header-menu{
-      margin-bottom: 10px;
-    }
-    
-  .row {
-      --bs-gutter-x: 0;
-      }
+.row 
+  /*RESET DE ROW*/
+  { --bs-gutter-x: 0; }
 
-  .color__nav{
-    color: white;
+   /*-------------------NAVBAR STYLE---------------------------*/    
+.color__nav 
+  /*COLOR LETRA DE NAVBAR*/
+  {color: white;}
+
+a.nav-link 
+  /*COLOR LETRA DE NAVBAR*/
+  {
+  color: white;
+  opacity: 50%;
   }
-
-  .dropdown-item {
-    /*NAVBAR LISTA DESPLEGABLE COLORES*/
-    color: white; }
-
-  .color__nav :hover{
-    /*hover header */
-    color: darkred;
-    transition: color 1s;
-    transition: all .2s ease-in-out;
-    transform: scale(1.2);
-  }
-
-  .dropdown-menu :hover {
-     transition: none;
-     transform: none;
-  } 
   
-  a.nav-link {
-    color: white;
-    opacity: 50%;
-  }
-
-  .main-logo{
-    /**/
-    display: flex;
-    justify-content: center;
-    padding: 50px;
-    padding-bottom: 0;
-  }
-
-  .navbar-expand-lg .navbar-collapse{
+.navbar-expand-lg .navbar-collapse{
         justify-content: center;
   }
 
-  li.nav__pad {
+li.nav__pad {
     padding: 5px 50px;
   }
 
-  .icon{
+.dropdown-item 
+  /*NAVBAR *LISTA DESPLEGABLE* COLORES*/
+  {color: white; }
+
+.color__nav :hover
+  /*HOVER HEADER NAVBAR PARA INDEX */
+  {
+  color: darkred;
+  transition: color 1s;
+  transition: all .2s ease-in-out;
+  transform: scale(1.2);
+  }
+
+.dropdown-menu :hover {
+  /*HOVER DE BARRA DESPLEGABLE NONE*/
+  transition: none;
+  transform: none;
+  } 
+
+ /*------------------MAIN--------------------------*/  
+
+  .main-logo
+/* LOGO TIPO DRIP DE MAIN */
+  {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  padding-bottom: 0; 
+  display: flex;
+  flex: 1;
+  }
+
+/*----ICONOS----*/
+  .icon
+  /*PEQUEÑOS ICONOS DE ACCESO A REDES SOCIALES*/
+  {
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -104,22 +117,33 @@ body{
     transform: scale(1.2);
   }
 
-  .main-logo{
-    display: flex;
-    flex: 1;
-    justify-content: center;
-  }
+/*---- FIN DE ICONOS----*/
 
-  .links__flex{
+/*------------------------FOOTER----------------------*/
+  .links__flex
+  /*LINKS DE FOOTER*/
+  {
     display: flex;
     flex-direction: column;
+    margin-top: 40px;
+  }
+  
+ .logos__flex 
+  /* SU FLEX DE FOOTER*/
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
   }
 
-  .img__centro{
+  .img__centro
+  /*IMAGENES DE SPONSOR SU FLEX*/
+  {
     display: flex;
     justify-content: center;
   }
-
+ 
+/*-----TEXT COLOR DE FOOTER LINKS-----*/
   .text__color{
     color: darkred;
   }
@@ -127,18 +151,56 @@ body{
   .text__color :hover{
     color: red;
   }
+/*-----TEXT COLOR DE FOOTER LINKS-----*/
 
+.logos__footer
+/*LOGOS SPONSOR DE FOOTER SU TAMAÑO*/ 
+{
+  width: auto;
+  height: auto;
+  max-width: 100px;
+  max-height: 250px; 
+  }
+  
 /*-------------------------------------------RESTO DE PAGINAS--------------------------------------------------*/
 
 .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm,
- .navbar>.container-xl, .navbar>.container-xxl {
+ .navbar>.container-xl, .navbar>.container-xxl 
+ /*NAVBAR PARA EL RESTO DE PAGINAS, MODIFICACIONES*/
+ {
   display: flex;
   flex-wrap: inherit;
   align-items: center;
   justify-content: flex-end;
 }
 
-.tipo__letra{
+ .top_end_bg 
+  /* BACKGROUN DE COLORES CONVINADOS PARA EL NAVBAR Y EL FOOTER DE LAS PAGINAS (TODAS)*/
+  {background-image: linear-gradient(to bottom, #131212, #270101); }
+
+ ul.navbar-nav.color-hover.color.h2 
+    /*FLEX DE NAVBAR DE LAS PAGINAS SIN INCLUIR AL INDEX*/
+    {
+      display: flex;
+      align-items: center;
+    }
+ nav.navbar.navbar-expand-lg.top_end_bg 
+ /*RESET DE NAVBAR*/
+ {padding: 0;}
+
+  #DRIP 
+    /*TITULO DE NAVBAR QUE ES EL ACCESO AL INDEX QUE TIENE COMO NOMBRE DRIP */
+    {
+      padding: 0px 55px;
+      text-decoration: none;
+      list-style: none;
+      font-weight: bolder;
+      font-size: 40px;
+    }
+
+.titular__drip
+/*TITULARES QUE TE DICEN EN DONDE ESTAS SITUADO DE LAS PAGINAS (TODAS Y REUTILIZABLE) */
+{
   color: #7e7777;
   font-family: 'Abril Fatface', cursive;
   font-style: italic;
@@ -149,120 +211,102 @@ body{
   margin-bottom: 10px;
   background-color: #380303;
 } 
-.padding-titulo {
-    /*TITULO COMPARTIDO (TODOS)*/
-    padding: 5px 20px; }
+.padding-titulo 
+    /*TITULO COMPARTIDO/ ESPACIADO DE LA NAVBAR (TODOS)*/
+    {padding: 5px 20px;}
   
-    .color__nav__pag :hover{
-      /*hover header */
+.color__nav__pag :hover
+    /*COLOR DE HOVER DE LA NAVBAR */
+    {
       color: darkred;
-      transition: color 1s;}
+      transition: color 1s;
+    }
   
-  .nav-contenido ul {
-    /*CONTENIDO DE MIMBROS Y ESPORT*/
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: space-around; }
+  .nav-contenido ul 
+    /*CONTENIDO DE MIEMBROS Y ESPORT/ RESEST DE LA NAV PARA EL FUNCIONAMIENTO DEL FLEX ENTRE IMAGENES*/
+    {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: space-around; 
+    }
   
-  .subtitulo label {
-    /*CONTENIDO DE MIEMBROS Y ESPORT*/
-    color: white;
-    padding: 1rem 100px;
-    font-size: 40px;
-  }
-
-  .subtitulo label{
-  padding: 10px 10px;
-  margin-top: 10px;
-  margin-left: 40px;
-  background-color: #811313;
-  border-radius: 20px;
-  }
-  
-  nav .lista-contenido a {
-    /*SELECTOR MIEMBROS Y ESPORT*/
+  nav .lista-contenido a 
+    /* CAJA DE SELECTOR MIEMBROS Y ESPORT*/
+    {
     color: white;
     display: block;
     text-decoration: none;
     margin-top: 10px;
     padding: .5em 1em;
-    text-align: center; }
+    text-align: center; 
+    }
   
-  .nav-contenido {
-    padding-bottom: 1em; }
+  .nav-contenido 
+  /*NAV CONTENIDO DE IMAGENES SELECCIONABLES DE ESPORT Y MIEMBROS (ESPACIADO)*/
+  {padding-bottom: 1em;}
   
-  .nav-contenido .lista-contenido a:hover {
-    /*SELECTOR HOVER MIEMBROS Y ESPORT*/
+  .nav-contenido .lista-contenido a:hover 
+    /*SELECTOR DE IMAGENES EN PANTALLA CON HOVER DE MIEMBROS Y ESPORT*/
+  {
     border-radius: 20px;
     background: linear-gradient(to bottom, #141313, #811313);
-    color: red; }
+    color: red; 
+  }
 
-   .nav-contenido .miembros-cartas li{
+   .nav-contenido .miembros-cartas li
+   /*ESPACIADO DE IMAGENES DE MIEMBROS DRIP */
+  {
     padding-left: 0px !important;
     padding-right: 0px !important;
   } 
 
-  .nav-contenido .lista-contenido li{
+  .nav-contenido .lista-contenido li
+  /*ESPACIADO DE IMAGENES DE ESPORT DRIP*/
+  {
     padding-left: 50px;
     padding-right: 50px;
   }
  
-  .nav-contenido .lista-contenido li a img{
+  .nav-contenido .lista-contenido li a img
+  /*TAMAÑO DE IMAGENES DE ESPORT Y MIEMBROS MAS UN BORDER*/
+  {
     width: 200px;
     height: 400px;
     border-radius: 20px;
   }
 
-  .nav-contenido .lista-contenido .img__logo__juego{
+  .nav-contenido .lista-contenido .img__logo__juego
+  /*TAMAÑO DE LOGOS DEBAJO DE IMAGENES DE ESPORT*/
+  {
     width: 150px;
     height: 150px;
   }
 
-  #FIFA{
-    width: 190px;
-  }
+  #FIFA
+  /*ID DE IMAGEN ESPORT (FIFA) TAMAÑO MODIFICABLE*/
+  {width: 190px;}
+/*-------------------------¡COMPANY!---------------------------------------*/
 
-  .bloque {
-    /*COMPANY STYLE*/
-    padding: 0;
-   }
+
+.bloque 
+  /*COMPANY RESET DE CAJA STYLE*/
+  {padding: 0;}
   
-  .bloque-primero {
-    /*COMPANY STYLE*/
+  .bloque-primero 
+    /*COMPANY FLEX DE PRIMERA PARTE DE CONTENDIO DEL MAIN STYLE, COLORES DE TEXTO, FLEX Y PADDING DEL CONTENIDO*/
+  {
     display: flex;
     padding: 17px 18px;
     flex-direction: row;
     justify-content: flex-start;
-    color: #7e7777; }
-  
-  .bloque-segundo {
-    /*COMPANY STYLE*/
-    display: flex;
-    flex-direction: row;
-    color: darkred;
-    justify-content: center; }
-
-.fundadores{
-  display: flex;
-}
-
-.fundadores div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 40px;
-}
-
-  .fundadores div img{
-    width: 100px; 
-    height: 100px;
-    border-radius: 70px;
+    color: #7e7777; 
   }
-  
-  p.parrafo {
-    /*COMPANY STYLE*/
+
+  p.parrafo
+    /*COMPANY  BLOQUE UNO, FLEX, COLORES Y BORDES DEL CONTENIDO PRINCIPAL DEL CONTENIDO (PRESENTACION)*/
+  {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -270,30 +314,71 @@ body{
     padding: 10px 10px;
     font-size: 22px;
     color: #7e7777;
-    border: 3px #7e7777 solid; }
-  
-  span.parrafo-negrita {
-    /*COMPANY STYLE*/
+    border: 3px #7e7777 solid; 
+  }
+
+  span.parrafo-negrita 
+    /*ESTILO DE FUNTE Y COLOR DE PRESENTACION DE COMPANY STYLE*/
+  {
     font-style: italic;
-    color: darkred; }
-  
-  .Img__Company {
+    color: darkred; 
+  }
+
+  .bloque-segundo 
+    /*COMPANY FLEX DE SEGUNDO BLOQUE, COLORES STYLE*/
+  {
+    display: flex;
+    flex-direction: row;
+    color: darkred;
+    justify-content: center; 
+  }
+
+.fundadores
+/*IMAGENES DE FUNDADORES EN COMPANY, FLEX PARA ACOMODARLOS*/
+{
+  display: flex;
+}
+
+.fundadores div
+/*IMAGENES DE FUNDADORES EN COMPANY Y ESPACIADO ENTRE ELLOS */
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+
+.fundadores div img
+/*IMAGENES DE FUNDADORES MODIFICACION A SU RADIO (COMPANY)*/
+{
+  width: 100px; 
+  height: 100px;
+  border-radius: 70px;
+}
+
+.Img__Company 
+/*IMAGEN LOGO DE DRIP DE COMPANY, POSICIONAMIENTO DEL MISMO CON FLEX*/
+  {
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-content: center; }
+    align-content: center; 
+  }
   
-  .bloque-tercero {
-    /*COMPANY STYLE*/
+  .bloque-tercero 
+    /*BLOQUE NUMERO TRES DE COMPANY, SU FLEX Y ESPACIADOS CON MARGIN Y COLORES*/
+  {
     display: flex;
     flex-direction: column;
     align-items: center;
     color: #7e7777;
-  margin-top: 40px;
-  margin-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
   }
 
-.titulo__bloque__tres{
+.titulo__bloque__tres
+/*TITULOS DEL BLOQUE NUMERO TRES DE COMPANY CON TODAS LAS MODIFICACIONES (REUTILIZABLE)*/
+{
   color: #7e7777;
   font-size: 40px;
   margin-top: 40px;
@@ -306,21 +391,35 @@ body{
   justify-content: center;
 }
 
+.titulares
+/*CONTENIDO DE TEXTO SITUADO EN EL MAIN DE COMPANY */
+ {
+   text-align: center;
+   margin-bottom: 50px;
+   color: #5c0404;
+ }
 
-.carta{
+#romo_dicho
+/*ID DE UN COLOR DE TEXTO ESPECIFICO EN UN PARRAFO DE TEXTO DEBAJO DE TITULARES*/
+{color: #7e7777;}
+
+/*------------------CARTA DE COMPANY------------*/
+.drip__carta
+  {display: flex;}
+
+.carta
+/*CARTA CON SU RESPECTIVA CAJA*/
+{
   background: #141313;
   padding: 20px;
   padding-left: 40px;
   border-radius: 30px;
   padding-right: 40px;
 }
-  .titulares{
-    text-align: center;
-    margin-bottom: 50px;
-    color: #5c0404;
-  }
 
-.drip__carta__titulo{
+.drip__carta__titulo
+/*TITULO DE LA CARTA DE COMPANY*/
+{
   text-align: center;
   margin-top: 0px; 
   margin-bottom: 30px;
@@ -328,100 +427,72 @@ body{
   color: #5c0404;
 }
 
-  .drip__carta{
-    display: flex;
-  }
-
-.drip__carta img{
-width: 400px;
-height: 400px;
-margin-right: 20px;
-border-radius: 20px;
+.drip__carta img
+/*TAMAÑO DE IMAGEN DE LA CARTA PARTE DERECHA*/
+{
+  width: 400px;
+  height: 400px;
+  margin-right: 20px;
+  border-radius: 20px;
 }
 
-#romo_dicho{
-  color: #7e7777;
-}
-
-.carta__izq{
+.carta__izq
+/*CONTENIDO IZQUIERDO DE LA CARTA CON UNA CAJA DENTRO DE OTRA CAJA CON COLOR DE TEXTO Y COLOR DE BG MAS TAMAÑO DE LA CAJA*/
+{
   background-color:#2e0000;
   color: #7e7777;
   width: 400px;
   height:400px;
   border-radius: 20px;
   padding: 20px;
-
 }
 
+/*------------------ FIN DE CARTA DE COMPANY------------*/
 
-  ul.ul-remeras {
-    /*TIENDA REMERAS STYLE*/
+/*------------------ TIENDA DE ROPA DRIP------------*/
+ul.ul-remeras 
+    /*TIENDA REMERAS DRIP, FLEX DE LAS REMERAS PARA POSICIONARLAS*/
+  {
     display: flex;
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
     list-style: none;
-    text-decoration: none; }
-  
-  .botones__ropa {
-    height: 300px;
-    width: 400px;
-    max-width: 400px;
-    max-height: 500px;
-    padding: 0px;
-    border: #380303 6px solid;
-    border-radius: 40px;
-    }
-  
-  .botones__flex {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: row; }
-  
-  .carousel__bg{
-    margin-bottom: 1rem;
+    text-decoration: none; 
   }
 
-  .botones__bg{
-    background-color: black;
-    border-radius: 10px;
-    border:7px #380303 solid;
-}
-
-.cont__img__bg{
-  background-image: url(../images/BACKGROUND/background-white-wall-tienda\ conv.jpeg);
-  background-position: center;
-  background-size: 100% 100%;
-  background-attachment: fixed;
-  margin: 0;
-}
-
-  .w-100 {
-    /*REMERAS CARUCEL TAMAÑO*/
-    height: 400px; }
+  .cont__img__bg
+  /*BG DE LA TIENDA DE ROPA, SITUADO DETRAS DE EL CONTENIDO DE LAS REMERAS*/
+  {
+    background-image: url(../images/BACKGROUND/background-white-wall-tienda\ conv.jpeg);
+    background-position: center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    margin: 0;
+  } 
   
-  .ul-remeras li img {
+  .ul-remeras li img 
     /*LIST STYLE NONE DE LAS REMERAS DE TIENDA*/
-    list-style: none; }
+   {list-style: none; }
   
-    .remeras__tamaño div li a img {
+    .remeras__tamaño div li a img 
+    {
       width: 600px;
       height: 300px;
       padding: 10px;
       border-radius: 20px;
       filter: drop-shadow(12px 3px 3px black);
-    
     }
 
-    .remeras__tamaño div :hover{
-
+    .remeras__tamaño div :hover
+    {
       border-radius: 20px;
       background: linear-gradient(to bottom, #363636, #580303);
     }
 
-    .drip__titulo__remeras {
+    .drip__titulo__remeras 
+    {
       text-align: center;
       font-size: 40px;
       color: white;
@@ -435,170 +506,200 @@ border-radius: 20px;
       border-radius: 20px;
     }
 
-    #romo__remera {
+    #romo__remera 
+    {
       display: flex;
       flex-direction: row;
       justify-content: center;
       align-items: center;
-    
     }
 
-    #romo__remera img{
+    #romo__remera img
+    {
       width: 800px;
       height: 400px;
-
     }
 
-  .logos__footer {
-    width: auto;
-    height: auto;
-    max-width: 100px;
-    max-height: 250px; }
-  
-  .logos__flex {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  
-  .links__flex {
-    display: flex;
-    flex-direction: column; }
-  
-  .img__centro {
-    display: flex;
-    justify-content: center; }
-  
-  .top_end_bg {
-    background-image: linear-gradient(to bottom, #131212, #270101); }
+   /*------FIN DE REMERAS DRIP ------*/
 
-    ul.navbar-nav.color-hover.color.h2 {
-      display: flex;
-      align-items: center;}
+  /*------ACCESOS DE INFORMACION DE LA ROPA Y ACCESORIOS DRIP QUE HAY EN LA TIENDA------*/
 
-      #DRIP {
-        padding: 0px 55px;
-        text-decoration: none;
-        list-style: none;
-        font-weight: bolder;
-        font-size: 40px;
-    }
-
-
-
-      nav.navbar.navbar-expand-lg.top_end_bg {
-        padding: 0;
-    }
-
-  /*-----------MEDIA QUERIES-----------*/
-
-  @media screen and (max-width: 1024px) {
-    
-    .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm,
- .navbar>.container-xl, .navbar>.container-xxl {
-
-  justify-content: center;
-
- }
-
- .tipo__letra{
-  color: white;
-  font-family: 'Abril Fatface', cursive;
-  font-style: italic;
-  font-weight: 100;
-  text-align: center;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  background-color: #380303;
-}
-
- .navbar__flex{
-  align-items: center;
- }
- .remeras__tamaño div {
-  display: flex; 
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
- }
-
- .drip__titulo__remeras{
-  width: 100%;
-  margin: 0;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
- }
-
- .remeras__tamaño div li a img {
-  width: 350px;
-  height: 200px;
-}
-
-#romo__remera img{
-  width: 400px;
-  height: 200px;
-
-}
-
-ul.navbar-nav.color__nav__pag.h2 {
-  align-items: center;
-}
-    nav ul {
-      flex-direction: column; } 
-    
-      #DRIP{
-        padding-right: 50px;
-      }
-
-      .w-100{
-        height: 250px;
-      }
-
-      .botones__ropa{
-        height: 300px;
-        width: 300px;
-        padding: 0px;
-        margin: 10px; 
-        border-radius: 30px;
-      }
-
-      .nav-contenido .lista-contenido li{
-        padding-left: 0px;
-        padding-right: 0px;
-      }
-
-      .nav-contenido .lista-contenido .img__logo__juego {
-        width: 150px;
-        height: 150px;
-        margin-right: 75px;
-        margin-left: 0;
-      }
-
-        .nav-contenido .lista-contenido li a img {
-          width: 200px;
-          height: 400px;
-          border-radius: 20px;
-          margin-left: 0px;
-          margin-right: 130px;
-        }
-
-    #FIFA{
-        width: 150px;
-    } 
-
-    .fundadores div{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 10px;
-  }
-
-  .drip__carta {
-    display: flex;
-    justify-content: center;
+  .botones__ropa 
+  /*TAMAÑO DE LA CAJA DE LAS IMAGENES, BG Y COLORES DE BORDES MAS RADIUS*/
+  {
+    height: 300px;
+    width: 400px;
+    max-width: 400px;
+    max-height: 500px;
+    padding: 0px;
+    border: #380303 6px solid;
+    border-radius: 40px;
   }
   
-  .carta {
+  .botones__flex 
+  /*ESPACIADO DE LAS IMAGENES DE BOTONES*/
+  {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row; 
+  }
+
+  .botones__bg
+  /*BACKGROUND DE BOTONES*/
+  {
+    background-color: black;
+    border-radius: 10px;
+    border:7px #380303 solid;
+  }
+
+/*------ FIN DE ACCESOS DE INFORMACION DE LA ROPA Y ACCESORIOS DRIP QUE HAY EN LA TIENDA------*/
+
+ /*------CAROUSEL------*/
+  .carousel__bg
+  /*CARRUSEL HECHO CON BOOSTRAP, MODIFICACION DE SU MARGEN*/
+  {margin-bottom: 1rem;}
+
+  .w-100 
+  /*REMERAS CARUCEL TAMAÑO*/
+   {height: 400px; }
+/*------FIN DE CAROUSEL------*/
+
+/*-----------MEDIA QUERIES-----------*/
+
+@media screen and (max-width: 1024px) 
+{
+    
+      .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm,
+  .navbar>.container-xl, .navbar>.container-xxl 
+
+  {
+    justify-content: center;
+  }
+
+  .titular__drip
+  /*TITULARES QUE TE DICEN EN DONDE ESTAS SITUADO DE LAS PAGINAS (TODAS Y REUTILIZABLE) */
+  {
+    color: white;
+    font-family: 'Abril Fatface', cursive;
+    font-style: italic;
+    font-weight: 100;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #380303;
+  }
+
+  .navbar__flex
+  /*NAVBAR ITEMS CENTRADOS*/
+  {align-items: center;}
+
+  ul.navbar-nav.color__nav__pag.h2 
+  /*NAVBAR ITEMS CENTRADOS*/
+  {align-items: center;}
+      
+  nav ul 
+  /*NAVBAR ITEMS EN COLUMNAS*/
+  {flex-direction: column;} 
+      
+  #DRIP
+  /*NAVBAR ITEM DE INDEX "DRIP" ESPACIADO*/
+  {padding-right: 50px;}
+
+  .w-100
+    /*CAROUSEL TAMAÑO DE TIENDA*/
+    {height: 250px;}
+
+  /*REMERAS DRIP DE TIENDA*/
+  .remeras__tamaño div 
+  {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .drip__titulo__remeras
+  {
+    width: 100%;
+    margin: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .remeras__tamaño div li a img 
+  {
+    width: 350px;
+    height: 200px;
+  }
+
+  #romo__remera img
+  {
+    width: 400px;
+    height: 200px;
+  }
+
+  .botones__ropa
+    {
+      height: 300px;
+      width: 300px;
+      padding: 0px;
+      margin: 10px; 
+      border-radius: 30px;
+    }
+
+  /* FIN DE REMERAS DRIP*/
+
+  .nav-contenido .lista-contenido li
+  /*MIEMBROS Y ESPORTS ESPACIADO DEL CONTENIDO*/
+  {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .nav-contenido .lista-contenido .img__logo__juego 
+  /*TAMAÑO DE LAS IMAGENES LOGOTIPO DE ESPORTS*/
+  {
+    width: 150px;
+    height: 150px;
+    margin-right: 75px;
+    margin-left: 0;
+  }
+
+  #FIFA
+  /*TAMAÑO DE LA IMG FIFA DE ESPORTS*/
+  {width: 150px;}
+
+  .nav-contenido .lista-contenido li a img 
+  /*TAMAÑO DE LAS IMG DE ESPORTS*/
+  {
+    width: 200px;
+    height: 400px;
+    border-radius: 20px;
+    margin-left: 0px;
+    margin-right: 130px;
+  }
+
+  .fundadores div
+  /*FUNDADORES FLEX Y ESPACIADO DE COMPANY EN EL MAIN*/
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  /*--------CARTA--------*/
+  .drip__carta 
+  /**/
+  {
+    display: flex;
+    justify-content: center;
+  }
+    
+  .carta 
+  {
     background: #141313;
     padding: 10px;
     padding-left: 20px;
@@ -606,15 +707,17 @@ ul.navbar-nav.color__nav__pag.h2 {
     padding-right: 20px;
     padding-bottom: 20px;
   }
-  
-  .drip__carta img {
+    
+  .drip__carta img 
+  {
     width: 400px;
     height: 400px;
     margin-right: 20px;
     border-radius: 20px;
   }
-  
-  .carta__izq {
+    
+  .carta__izq 
+  {
     background-color: #2e0000;
     color: #7e7777;
     width: 400px;
@@ -622,16 +725,21 @@ ul.navbar-nav.color__nav__pag.h2 {
     border-radius: 20px;
     padding: 20px;
   }
-  
-  .drip__carta__titulo {
+    
+  .drip__carta__titulo 
+  {
     text-align: center;
     margin-top: 0px;
     margin-bottom: 30px;
     font-size: 40px;
     color: #5c0404;
   }
-  
-  .titulo__bloque__tres {
+
+  /*--------FIN DE CARTA--------*/
+
+  .titulo__bloque__tres 
+  /*UN TITULO SITUADO EN EL MAIN BLOQUE-3*/
+  {
     color: #7e7777;
     font-size: 40px;
     margin-top: 0;
@@ -644,140 +752,179 @@ ul.navbar-nav.color__nav__pag.h2 {
     justify-content: center;
   }
 
-    }
+}
   
-  @media screen and (max-width: 525px) {
+@media screen and (max-width: 525px) 
+{
     
     .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm,
- .navbar>.container-xl, .navbar>.container-xxl {
+    .navbar>.container-xl, .navbar>.container-xxl 
+    {justify-content: center;}
 
-  justify-content: center;
+  .titular__drip
+  /*TITULARES QUE TE DICEN EN DONDE ESTAS SITUADO DE LAS PAGINAS (TODAS Y REUTILIZABLE) */
+  {
+    color: white;
+    font-family: 'Abril Fatface', cursive;
+    font-style: italic;
+    font-weight: 100;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #380303;
+  }
 
+
+ .navbar__flex
+ /*NAVBAR ALINEACION DE ITEMS*/
+ {
+   align-items: center;
  }
 
- .tipo__letra{
-  color: white;
-  font-family: 'Abril Fatface', cursive;
-  font-style: italic;
-  font-weight: 100;
-  text-align: center;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  background-color: #380303;
-}
+  nav ul 
+  /*CONTENIDO DE LOS CONTENIDOS EN "GENERAL" POSICIONADO EN COLUMNAS*/
+  {
+    flex-direction: column; 
+  }  
 
+  li.nav-item
+  /*NAVBAR ITEMS RESET DE ESPACIADO*/
+  {
+    padding: 0;
+  }
 
- .navbar__flex{
+  #DRIP
+  /*NAVBAR ITEM DE INDEX "DRIP" ESPACIADO*/
+  {
+    padding-right: 0;
+    padding: 0;
+  }
+
+ .w-100
+/*CAROUSEL TAMAÑO DE TIENDA*/
+  {
+   height: 215px;
+  }
+
+ul.navbar-nav.color__nav__pag.h2 
+/*NAVBAR ITEMS CENTRADOS*/
+{
   align-items: center;
- }
-
- .color__nav :hover{
-  /*hover header */
-  transition: none;
-  transform: none;
 }
 
-.remeras__tamaño  div{
+ .color__nav :hover
+ /*HOVER DE HEADEAR DEL NAVBAR*/
+  {
+    transition: none;
+    transform: none;
+  }
+
+/*-----REMERAS DRIP DE TIENDA-----*/
+.remeras__tamaño  div
+{
   display: flex; 
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
- } 
+} 
 
- .drip__titulo__remeras{
+ .drip__titulo__remeras
+ {
   width: 100%;
   margin: 0;
   margin-top: 1rem;
   margin-bottom: 1rem;
  }
 
-.remeras__tamaño div li a img {
+.remeras__tamaño div li a img 
+{
   width: 200px;
   height: auto;
 }
 
-#romo__remera img{
+#romo__remera img
+{
   width: 300px;
   height: auto;
-
 }
 
-ul.navbar-nav.color__nav__pag.h2 {
-  align-items: center;
-}
-
-.icon__flex {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-around; }
-
-.logos__flex {
-  flex-direction: column; }
-
-nav ul {
-  flex-direction: column; }  
-
-li.nav-item{
-    padding: 0;}
-
-#DRIP{
-  padding-right: 0;
-  padding: 0;
-      }
-
-.botones__ropa {
- height: 150px;
- width: 215px; 
- border-radius: 30px;
- padding: 0px;
+.botones__ropa 
+{
+  height: 150px;
+  width: 215px; 
+  border-radius: 30px;
+  padding: 0px;
   margin: 10px;
- }
+}
 
- .botones__flex{
+ .botones__flex
+{
   flex-direction: column;
+}
+
+/* ---FIN DE REMERAS DRIP----*/
+
+.icon__flex 
+/*POSICION DE LOS ICONOS DE INDEX*/
+  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
   }
 
- .w-100{
-   height: 215px;
+.logos__flex 
+/*POSICION DE LOS LOGOS SPONSOR DE TODAS LAS PAGINAS*/
+  {
+    flex-direction: column; 
   }
 
-  .nav-contenido .lista-contenido li{
+  .nav-contenido .lista-contenido li
+/*MIEMBROS Y ESPORTS ESPACIADO DEL CONTENIDO*/
+  {
     padding-left: 0px;
     padding-right: 0px;
   }
 
-  .nav-contenido .lista-contenido .img__logo__juego {
+  .nav-contenido .lista-contenido .img__logo__juego 
+ /*TAMAÑO DE LAS IMAGENES LOGOTIPO DE ESPORTS*/
+  {
     width: 150px;
     height: 150px;
     margin-right: 40px;
     margin-left: 0;
   }
 
-    .nav-contenido .lista-contenido li a img {
-      width: 200px;
-      height: 400px;
-      border-radius: 20px;
-      margin-left: 0px;
-      margin-right: 50px;
-    }
+  .nav-contenido .lista-contenido li a img 
+ /*TAMAÑO DE LAS IMAGENES DE ESPORTS*/
+  {
+    width: 200px;
+    height: 400px;
+    border-radius: 20px;
+    margin-left: 0px;
+    margin-right: 50px;
+  }
 
-#FIFA{
-    width: 150px;
-} 
+#FIFA
+/*TAMAÑO DE LA IMG FIFA DE ESPORTS*/
+  {width: 150px;} 
 
 
-.fundadores{
+.fundadores
+/*FUNDADORES POSICIONAMIENTO DEL CONTENIDO*/
+{
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.drip__carta {
+/*------CARTA------*/
+.drip__carta 
+{
   display: flex;
   justify-content: center;
 }
 
-.carta {
+.carta 
+{
   background: #141313;
   padding: 10px;
   padding-left: 0;
@@ -786,31 +933,37 @@ li.nav-item{
   padding-bottom: 20px;
 }
 
-.drip__carta img {
-  width: 200px;
+.drip__carta img 
+{
+  width: 185px;
   height: 400px;
   margin-right: 20px;
   border-radius: 20px;
 }
 
-.carta__izq {
+.carta__izq 
+{
   background-color: #2e0000;
   color: #7e7777;
-  width: 200px;
+  width: 195px;
   height: 400px;
   border-radius: 20px;
   padding: 20px;
 }
 
-.drip__carta__titulo {
+.drip__carta__titulo 
+{
   text-align: center;
   margin-top: 0px;
   margin-bottom: 30px;
   font-size: 40px;
   color: #5c0404;
 }
+/*------FIN DE CARTA------*/
 
-.titulo__bloque__tres {
+.titulo__bloque__tres 
+/*UN TITULO SITUADO EN EL MAIN BLOQUE-3*/
+{
   color: #7e7777;
   font-size: 40px;
   margin-top: 0;
@@ -823,4 +976,4 @@ li.nav-item{
   justify-content: center;
 }
 
-    }
+}
